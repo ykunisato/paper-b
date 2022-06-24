@@ -52,14 +52,7 @@ RUN ["r", "install_r.r"]
 
 # install python packaegs
 RUN apt-get install -y python3-pip
-RUN apt install -y git
-
-RUN pip3 install notebook \
-    jupyterlab \
-    jupyterlab-git \
-    jupyter_contrib_nbextensions \
-    lckr-jupyterlab-variableinspector \
-    scipy \
+RUN pip3 install scipy \
     seaborn \
     scikit-learn \
     sympy \

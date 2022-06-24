@@ -2,11 +2,9 @@
 
 This is a repository of Dockerfile including packages and add-ins that are useful for writing articles with R Markdown in Rstudio. This Dockerfile is based on rocker/binder. This image include Juala and Python.
 
-[日本語解説(Japanese)](https://github.com/ykunisato/paper-r/blob/master/README_jp.md)
-
 Maintainer is Yoshihiko Kunisato (ykunisato@psy.senshu-u.ac.jp)
 
-Keywords: psychology, cognitive science, rstudio, rstan, rmarkdown, julia, python
+Keywords: psychology, cognitive science, rstudio, rmarkdown, stan, julia, python
 
 ## Usage
 
