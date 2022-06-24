@@ -52,9 +52,31 @@ RUN ["r", "install_r.r"]
 
 # install python packaegs
 RUN apt-get install -y python3-pip
-RUN pip3 install scipy \
+RUN apt install -y git
+
+RUN pip3 install notebook \
+    jupyterlab \
+    jupyterlab-git \
+    jupyter_contrib_nbextensions \
+    lckr-jupyterlab-variableinspector \
+    scipy \
+    seaborn \
+    scikit-learn \
     sympy \
-    matplotlib
+    mne \
+    axelrod \
+    deap \
+    japanize-matplotlib \
+    mecab-python3 \
+    unidic-lite \
+    networkx \
+    PuLP \
+    pymc3 \
+    simpy \
+    psychrnn \
+    pyddm \
+    inferactively-pymdp\
+    bokeh
 
 # Install Julia
 ARG JULIA_VERSION="1.7.2"
