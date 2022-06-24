@@ -14,15 +14,10 @@ Keywords: psychology, cognitive science, rstudio, rstan, rmarkdown, julia, pytho
 
 2. Open "terminal"(Mac) or "Command Prompt"(Windows)
 
-3. Type the following code to pull a Docker container. Change the "password" and "name_of_container" as you like.
-
-
-**Mac**
-
+3. Type the following code to pull a Docker container.
 
 ```
-docker run -p 8888:8888 --name paperb -e JUPYTER_ENABLE_LAB=yes ykunisato/paper-b
+docker run -v `pwd`:/home/rstudio -p 8888:8888 --name paperb ykunisato/paper-b
 ```
-start-notebook.sh --NotebookApp.token="paperb"
 
 4. Open the web browser and type "http://localhost:8888/" in the URL bar.
